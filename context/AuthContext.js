@@ -16,27 +16,24 @@ export const AuthProvider = ({ children }) => {
         });
         const data = await res.json();
 
-
-        setToken(data.token);
-        //console.log(data); bu geliyor
-
+        console.log("login yanıt : ",data);
 
         const profileRes = await fetch ('https://dummyjson.com/user/me', {
             method: 'GET',
             headers: {
-                'Authorization': `Bearer ${data.token}`,
+                'Authorization': `Bearer ${data.accessToken}`,
             },
-        })
+        });
 
         const profileData = await profileRes.json();
+
+        setToken(data.accessToken);
         setUser(profileData);
-        console.log(profileData); // burası gelmiyor
 
-};
+        console.log("kullanıcı: ",profileData);
 
-
+};  
     
-
     return (
         <AuthContext.Provider value={{ user, token, login, }}>
             {children}
