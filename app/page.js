@@ -1,21 +1,19 @@
 'use client';
 import { useState } from "react";
 import { useAuth } from '@/context/AuthContext'
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const { login, token, user,   } = useAuth();
   const [username, setUsername] = useState('emilys');
   const [password, setPassword] = useState('emilyspass');
+  const router = useRouter();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     await login(username, password);
-
+    router.push('/products');
   };
-
-  
-
-
   return (
     <div className='min-h-screen bg-gray-100 flex items-center justify-center'>
       <div className='max-w-xl w-full bg-white rounded-xl shadow-lg p-6'>
@@ -32,8 +30,7 @@ export default function Home() {
             onChange={(e) => setUsername(e.target.value)}
             />
           </div>
-
-
+              
           <div>
             <label className='block text-sm font-medium text-gray-700 mb-1'>Şifre</label>
             <input 
@@ -52,10 +49,7 @@ export default function Home() {
             Giriş Yap
           </button>
         </form>
-
-      
-        
-
+            
       </div>
     </div>
   );
