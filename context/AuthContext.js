@@ -32,8 +32,7 @@ export const AuthProvider = ({ children }) => {
 
         console.log("kullanıcı: ",profileData);
 
-};  
-    
+};
     return (
         <AuthContext.Provider value={{ user, token, login, }}>
             {children}
