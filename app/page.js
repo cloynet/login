@@ -5,12 +5,13 @@ import { useRouter } from "next/navigation";
 
 export default function Home() {
   const { login, token, user,   } = useAuth();
-  const [username, setUsername] = useState('emilys');
-  const [password, setPassword] = useState('emilyspass');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const router = useRouter();
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
     await login(username, password);
     router.push('/products');
   };
