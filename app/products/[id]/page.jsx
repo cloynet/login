@@ -7,7 +7,7 @@ export default function ProductDetails({ params }) {
   const { id } = use(params);
   const { getProductById } = useProducts();
   const product = getProductById(id);
-    
+     if (!product) return <p>...</p>;
   return (
     <div className='p-8 max-w-4xl mx-auto'>
         <h1 className='text-3xl font-bold mb-4'>{product.title}</h1>
