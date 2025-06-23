@@ -1,15 +1,25 @@
-import React from 'react'
+'use client';
 
-async function fetchProduct(id) {
-    const res = await fetch(`https://dummyjson.com/products/${id}`);
-    return res.json();
-}
+import React, { useEffect, useState, use } from 'react'
 
-export default async function ProductDetails({ params }) {
-  const { id } = params;
+export default function ProductDetails({ params }) {
+  const { id } =  use(params);
   
-  const product = await fetchProduct(id);
-    
+  const [product, setProduct] = useState(null);
+  
+  useEffect(() => {
+    async function fetchProduct() {
+      const res = await fetch(`https://dummyjson.com/products/${id}`);
+      const data = await res.json();
+      setProduct(data);
+    }
+    fetchProduct();
+  }, [id]);
+
+  
+  if (!product) return <div>Yükleniyor...</div>;
+
+
   return (
     <div className='p-8 max-w-4xl mx-auto'>
         <h1 className='text-3xl font-bold mb-4'>{product.title}</h1>
@@ -26,15 +36,7 @@ export default async function ProductDetails({ params }) {
         <p>Stok: {product.stock}</p>
         <p>İndirim: {product.discountPercentage}</p>
 
-        <h2 className='mt-6 font-semibold'>Yorumlar</h2>
-        <ul>
-            {product.reviews.map((review, i) => (
-                <li key={i} className='mb-2 border-b pb-2'>
-                    <p>{review.reviewerName} ({review.rating} / 5)</p>
-                    <p>{review.comment}</p>
-                </li>
-            ))}
-        </ul>
+        
 
     </div>
   )
