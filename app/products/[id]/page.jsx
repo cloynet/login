@@ -1,14 +1,12 @@
+'use client';
 import React from 'react'
+import { use } from 'react';
+import { useProducts } from '@/context/ProductContext';
 
-async function fetchProduct(id) {
-    const res = await fetch(`https://dummyjson.com/products/${id}`);
-    return res.json();
-}
-
-export default async function ProductDetails({ params }) {
-  const { id } = params;
-  
-  const product = await fetchProduct(id);
+export default function ProductDetails({ params }) {
+  const { id } = use(params);
+  const { getProductById } = useProducts();
+  const product = getProductById(id);
     
   return (
     <div className='p-8 max-w-4xl mx-auto'>
