@@ -63,11 +63,13 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
     npm run dev
     ```
 
+Uygulamanız artık **http://localhost:3000** adresinde çalışıyor olmalıdır. / Your application should now be running at **http://localhost:3000**.
+
 ### 🧑‍💻 Usage & Test Login / Kullanım ve Test Giriş
 
-* **Giriş:** Giriş için `/` sayfasını açın, test kullanıcı adını ve şifreyi girin.
-* **Yönlendirme:** Giriş yaptıktan sonra `/products` veya `/recipes` sayfalarına yönlendirileceksiniz.
-* **İşlem:** Ürünleri veya tarifleri arayabilir ve detay sayfalarına gidebilirsiniz.
+* **Giriş:** Giriş için `/` sayfasını açın, test kullanıcı adını ve şifreyi girin. / **Login:** Open the `/` page and enter the test username and password.
+* **Yönlendirme:** Giriş yaptıktan sonra `/products` veya `/recipes` sayfalarına yönlendirileceksiniz. / **Redirection:** After logging in, you will be redirected to the `/products` or `/recipes` pages.
+* **İşlem:** Ürünleri veya tarifleri arayabilir ve detay sayfalarına gidebilirsiniz. / **Action:** You can search for products or recipes and view their details.
 
 | Alan / Field | **Test Value (EN)** | Test Değeri (TR) |
 | :---: | :---: | :---: |
@@ -78,16 +80,13 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
 
 ## 📌 Notes / Notlar
 
-* **Auth Context** dummyjson API'ın `/auth/login` endpoint'ini kullanır.
-* **Product ve Recipes Contexts** verileri dummyjson API üzerinden çeker (`/products`, `/recipes`).
-* Global state yönetimi **React state ve context** kullanımıyla sağlanır.
+* **Auth Context** dummyjson API'ın `/auth/login` endpoint'ini kullanır. / **Auth Context** uses the dummyjson API's `/auth/login` endpoint.
+* **Product ve Recipes Contexts** verileri dummyjson API üzerinden çeker (`/products`, `/recipes`). / **Product and Recipes Contexts** fetch data from the dummyjson API (`/products`, `/recipes`).
+* Global state yönetimi **React state ve context** kullanımıyla sağlanır. / Global state management is handled using **React state and context**.
 
 ---
 
 ## 🔗 Live Demo & Repository
 
 * **GitHub Deposu / GitHub Repository:** [https://github.com/cloynet/login](https://github.com/cloynet/login)
-* **Demo / Canlı Demo (Vercel):** (Lütfen demo linkini buraya ekleyin, orijinal metinde sadece başlıklar vardı.)
-    * Home / Giriş
-    * Products / Ürünler
-    * Recipes / Tarifler
+* **Canlı Demo / Live Demo:** [https://login-amber-seven.vercel.app/](https://login-amber-seven.vercel.app/)
