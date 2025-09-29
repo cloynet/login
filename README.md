@@ -63,8 +63,6 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
     npm run dev
     ```
 
-Uygulamanız artık **http://localhost:3000** adresinde çalışıyor olmalıdır. / Your application should now be running at **http://localhost:3000**.
-
 ### 🧑‍💻 Usage & Test Login / Kullanım ve Test Giriş
 
 * **Giriş:** Giriş için `/` sayfasını açın, test kullanıcı adını ve şifreyi girin. / **Login:** Open the `/` page and enter the test username and password.
