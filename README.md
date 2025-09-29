@@ -69,7 +69,7 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
 * **Yönlendirme:** Giriş yaptıktan sonra `/products` veya `/recipes` sayfalarına yönlendirileceksiniz.
 * **İşlem:** Ürünleri veya tarifleri arayabilir ve detay sayfalarına gidebilirsiniz.
 
-| Alan / Field | Test Değeri (EN) | Test Değeri (TR) |
+| Alan / Field | **Test Value (EN)** | Test Değeri (TR) |
 | :---: | :---: | :---: |
 | **Username** | `emilys` | `emilys` |
 | **Password** | `emilyspass` | `emilyspass` |
