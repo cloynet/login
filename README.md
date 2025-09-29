@@ -1,51 +1,93 @@
-# Full Stack Context Project
+# 🚀 Full Stack Context Project
 
-**A Next.js project demonstrating Auth, Product and Recipes contexts / Auth, Product ve Recipes context’lerini kullanan bir Next.js projesi.**
+**Auth, Product ve Recipes context’lerini kullanan bir Next.js projesi.** Global durum (state) yönetimini gösterir.
 
-[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com/)
+**A Next.js project demonstrating Auth, Product, and Recipes contexts.** Showcases global state management.
 
 ---
 
-## Features / Özellikler
-- Auth Context: Login / user authentication and token management / kullanıcı doğrulama ve token yönetimi  
-- Product Context: Fetch and list products / Ürünleri fetch etme ve listeleme  
-- Recipes Context: Fetch and list recipes / Tarifleri fetch etme ve listeleme  
-- Search / filtering functionality / Arama / filtreleme fonksiyonları  
-- Built with React + Next.js + TailwindCSS / React + Next.js + TailwindCSS ile geliştirilmiştir
+## ✨ Features / Özellikler
 
-## Pages / Sayfalar
-- `/` → Login page / Giriş sayfası
-- `/products` → Ürünler sayfası ve detayları
-- `/products/:id` → Ürün detay sayfası
-- `/recipes` → Tarifler sayfası ve arama
-- `/recipes/:id` → Tarif detay sayfası
+| Icon | Feature (EN) | Özellik (TR) |
+| :---: | :--- | :--- |
+| 🔑 | **Auth Context:** Login & Token Management | Kullanıcı doğrulama ve **Token Yönetimi**. |
+| 🛍️ | **Product Context:** Fetch and List Products | Ürünleri **çekme (fetch)** ve listeleme. |
+| 🍳 | **Recipes Context:** Fetch and List Recipes | Tarifleri **çekme (fetch)** ve listeleme. |
+| 🔍 | **Search / Filtering** Functionality | **Arama / Filtreleme** fonksiyonları. |
+| 🛠️ | **Modern Stack** | React + Next.js + TailwindCSS ile geliştirilmiştir. |
 
-## Setup / Kurulum
-```bash
-git clone <https://github.com/cloynet/login>
-cd <https://github.com/cloynet/login>
-npm install
-npm run dev
-```
+---
 
-## Usage / Kullanım
-1. Open `/` page and enter username and password / Giriş için `/` sayfasını açın, username ve password girin  
-2. After login, you will be redirected to `/products` or `/recipes` pages / Giriş yaptıktan sonra `/products` veya `/recipes` sayfalarına yönlendirileceksiniz  
-3. You can search for products or recipes and view their details / Ürünleri veya tarifleri arayabilir ve detay sayfalarına gidebilirsiniz
+## 🛠️ Technologies / Teknolojiler
 
-## Test Login / Test Giriş
-- Username / Kullanıcı Adı: `emilys`  
-- Password / Şifre: `emilyspass`
+| Icon | Technology / Teknoloji | Role / Görev (TR) | Role / Görev (EN) |
+| :---: | :--- | :--- | :--- |
+| ⚛️ | **Next.js & React** | Uygulamanın temel iskeleti ve hızlı arayüz yapısı. | The core framework for the application and fast UI structure. |
+| 🧩 | **React Context** | Uygulama genelinde Auth, Ürün ve Tarif durumlarını yönetmek için. | Used for managing Auth, Product, and Recipe states across the application. |
+| 💨 | **Tailwind CSS** | Hızlı ve responsive tasarım için utility-first CSS. | A utility-first CSS framework for fast and responsive design. |
+| 🔗 | **dummyjson API** | Kullanıcı doğrulama ve veri (ürün/tarif) çekme işlemlerinin kaynağı. | The source for user authentication and fetching data (products/recipes). |
 
-## Demo / Canlı Demo
-- [Home / Giriş](https://login-amber-seven.vercel.app/)  
-- [Products / Ürünler](https://login-amber-seven.vercel.app/products)  
-- [Recipes / Tarifler](https://login-amber-seven.vercel.app/recipes)
+---
 
-## Notes / Notlar
-- Auth Context uses dummyjson API (`https://dummyjson.com/auth/login`) / Auth Context dummyjson API kullanıyor (`https://dummyjson.com/auth/login`)  
-- Product and Recipes Contexts fetch data from dummyjson API (`https://dummyjson.com/products`, `https://dummyjson.com/recipes`) / Product ve Recipes Context’leri dummyjson API üzerinden veri çekiyor (`https://dummyjson.com/products`, `https://dummyjson.com/recipes`)  
-- Global state management is done using React state and context / React state ve context kullanımıyla global state yönetimi sağlanıyor
+## 🗺️ Pages / Sayfalar
+
+| Route / Rota | Description (EN) | Açıklama (TR) |
+| :--- | :--- | :--- |
+| `/` | **Login Page** | **Giriş Sayfası**. |
+| `/products` | **Products List Page** | **Ürünler Listesi Sayfası** ve ürün detaylarının önizlemesi. |
+| `/products/:id` | **Product Detail Page** | **Ürün Detay Sayfası**. |
+| `/recipes` | **Recipes List & Search Page** | **Tarifler Sayfası** ve arama/filtreleme alanı. |
+| `/recipes/:id` | **Recipe Detail Page** | **Tarif Detay Sayfası**. |
+
+---
+
+## ⚡ Setup / Kurulum
+
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+
+1.  **Depoyu Klonlayın / Clone the repository:**
+    ```bash
+    git clone [https://github.com/cloynet/login.git](https://github.com/cloynet/login.git)
+    cd login
+    ```
+
+2.  **Bağımlılıkları Yükleyin / Install dependencies:**
+    ```bash
+    npm install
+    # veya / or
+    yarn install
+    ```
+
+3.  **Geliştirme Sunucusunu Başlatın / Start the Development Server:**
+    ```bash
+    npm run dev
+    ```
+
+### 🧑‍💻 Usage & Test Login / Kullanım ve Test Giriş
+
+* **Giriş:** Giriş için `/` sayfasını açın, test kullanıcı adını ve şifreyi girin.
+* **Yönlendirme:** Giriş yaptıktan sonra `/products` veya `/recipes` sayfalarına yönlendirileceksiniz.
+* **İşlem:** Ürünleri veya tarifleri arayabilir ve detay sayfalarına gidebilirsiniz.
+
+| Alan / Field | Test Değeri (EN) | Test Değeri (TR) |
+| :---: | :---: | :---: |
+| **Username** | `emilys` | `emilys` |
+| **Password** | `emilyspass` | `emilyspass` |
+
+---
+
+## 📌 Notes / Notlar
+
+* **Auth Context** dummyjson API'ın `/auth/login` endpoint'ini kullanır.
+* **Product ve Recipes Contexts** verileri dummyjson API üzerinden çeker (`/products`, `/recipes`).
+* Global state yönetimi **React state ve context** kullanımıyla sağlanır.
+
+---
+
+## 🔗 Live Demo & Repository
+
+* **GitHub Deposu / GitHub Repository:** [https://github.com/cloynet/login](https://github.com/cloynet/login)
+* **Demo / Canlı Demo (Vercel):** (Lütfen demo linkini buraya ekleyin, orijinal metinde sadece başlıklar vardı.)
+    * Home / Giriş
+    * Products / Ürünler
+    * Recipes / Tarifler
