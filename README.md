@@ -40,6 +40,10 @@ npm run dev
 - Username / Kullanıcı Adı: `emilys`  
 - Password / Şifre: `emilyspass`
 
+## Demo / Canlı Demo
+- [Home / Giriş](https://login-amber-seven.vercel.app/)  
+- [Products / Ürünler](https://login-amber-seven.vercel.app/products)  
+- [Recipes / Tarifler](https://login-amber-seven.vercel.app/recipes)
 
 ## Notes / Notlar
 - Auth Context uses dummyjson API (`https://dummyjson.com/auth/login`) / Auth Context dummyjson API kullanıyor (`https://dummyjson.com/auth/login`)  
