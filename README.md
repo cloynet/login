@@ -62,6 +62,7 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
     ```bash
     npm run dev
     ```
+    Tarayıcınızda görüntülemek için http://localhost:3000 adresini açın. / Open http://localhost:3000 to view it in your browser.
 
 ### 🧑‍💻 Usage & Test Login / Kullanım ve Test Giriş
 
