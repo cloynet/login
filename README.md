@@ -5,7 +5,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com/)
 
 ---
 
@@ -25,8 +25,8 @@
 
 ## Setup / Kurulum
 ```bash
-git clone <YOUR_REPO_URL>
-cd <YOUR_REPO_FOLDER>
+git clone <https://github.com/cloynet/login>
+cd <https://github.com/cloynet/login>
 npm install
 npm run dev
 ```
@@ -35,6 +35,11 @@ npm run dev
 1. Open `/` page and enter username and password / Giriş için `/` sayfasını açın, username ve password girin  
 2. After login, you will be redirected to `/products` or `/recipes` pages / Giriş yaptıktan sonra `/products` veya `/recipes` sayfalarına yönlendirileceksiniz  
 3. You can search for products or recipes and view their details / Ürünleri veya tarifleri arayabilir ve detay sayfalarına gidebilirsiniz
+
+## Test Login / Test Giriş
+- Username / Kullanıcı Adı: `emilys`  
+- Password / Şifre: `emilyspass`
+
 
 ## Notes / Notlar
 - Auth Context uses dummyjson API (`https://dummyjson.com/auth/login`) / Auth Context dummyjson API kullanıyor (`https://dummyjson.com/auth/login`)  
